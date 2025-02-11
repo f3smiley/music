@@ -425,7 +425,7 @@ function ChatBox() {
   }, [input]);
 
   return (
-    <div className="component-container chat-box relative h-[550px] w-full bg-black/20 backdrop-blur-sm border border-white/20 rounded-lg overflow-hidden flex flex-col">
+    <div className="component-container chat-box relative h-[550px] w-full md:w-[520px] bg-black/20 backdrop-blur-sm border border-white/20 rounded-lg overflow-hidden flex flex-col">
       {/* Header with enhanced glow */}
       <div className="sticky top-0 z-10 bg-black/40 backdrop-blur-sm border-b border-white/20 shadow-[0_0_15px_rgba(255,255,255,0.1)]">
         <div className="flex items-center justify-between p-3">
@@ -493,4 +493,4 @@ function ChatBox() {
   );
 }
 
-export default memo(ChatBox); 
+export default memo(ChatBox);  

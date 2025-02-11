@@ -689,34 +689,4 @@ const TokenMetrics = () => {
                 ? "text-[#00F0FF] bg-[#00F0FF]/10 border-[#00F0FF]/30" 
                 : "text-[#FF4400] bg-[#FF4400]/10 border-[#FF4400]/30"
             )}>
-              {metrics.volumeChange >= 0 ? '+' : ''}{metrics.volumeChange.toFixed(1)}%
-            </span>
-          </div>
-          <div className="text-2xl font-mono text-[#00F0FF] tracking-wider">
-            ${metrics.volume.toFixed(1)}K
-          </div>
-        </div>
-        <TokenMetricGlow />
-      </Card>
-    </div>
-  );
-};
-
-// Helper component for the glow effect
-const TokenMetricGlow = () => (
-  <motion.div
-    className="absolute inset-0 -z-10 rounded-lg opacity-20"
-    style={{
-      background: `radial-gradient(circle, rgba(153, 69, 255, 0.4) 0%, rgba(0, 240, 255, 0.4) 50%, transparent 70%)`
-    }}
-    animate={{
-      scale: [1, 1.2, 1],
-      opacity: [0.2, 0.3, 0.2]
-    }}
-    transition={{
-      duration: 4,
-      repeat: Infinity,
-      ease: "easeInOut"
-    }}
-  />
-); 
+              {metrics.volumeChange >= 0 ? '+ 
