@@ -604,7 +604,7 @@ export default function LyricGenerator() {
   };
 
   return (
-    <div className="component-container lyric-generator relative h-[238px] w-[520px] bg-black/20 backdrop-blur-sm border border-[#9945FF]/20 rounded-lg overflow-hidden">
+    <div className="component-container lyric-generator relative h-[238px] w-full md:w-[520px] bg-black/20 backdrop-blur-sm border border-[#9945FF]/20 rounded-lg overflow-hidden">
       {/* Enhanced Header */}
       <div className="absolute inset-x-0 top-0 p-2 flex items-center justify-between border-b border-[#9945FF]/20">
         <div className="flex items-center gap-2">

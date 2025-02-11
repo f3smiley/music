@@ -271,10 +271,10 @@ export default function TabNav() {
       <Modal
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)}
-        className="w-[800px]"
+        className="w-full max-w-xl"
       >
         {selectedTab && renderModalContent(selectedTab)}
       </Modal>
     </>
   );
-} 
+}  

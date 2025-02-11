@@ -175,7 +175,7 @@ const Navigation = () => {
       <Modal
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)}
-        className="w-[800px]"
+        className="w-full max-w-xl"
       >
         {selectedItem && renderModalContent(selectedItem)}
       </Modal>
@@ -183,4 +183,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation; 
+export default Navigation;  
